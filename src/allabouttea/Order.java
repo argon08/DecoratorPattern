@@ -1,12 +1,20 @@
 package allabouttea;
 
+/**
+ * This represents the driver class for managing and printing receipts for tea order.
+ */
 public class Order {
 
-  public static void printReceipt(Tea tea){
+  public static void printReceipt(Tea tea) {
     System.out.println(tea.getName() + "\n$" + tea.getPrice());
     System.out.println("-------------");
   }
-  public static void main(String[] args){
+
+  /**
+   * The main method demonstrates three different orders of tea and their toppings.
+   * @param args Command line arguments (not used).
+   */
+  public static void main(String[] args) {
 
     // Order 1: brown sugar milk tea
     Tea sugarMilkTea = new MilkTea("Brown Sugar Milk Tea", SugarLevel.FULL, 6.6);
