@@ -5,16 +5,16 @@ package allabouttea;
  */
 public abstract class ToppingDecorator implements Tea {
 
-  Tea tea;
-  String name;
-  double price;
+  protected Tea tea;
+  protected String name;
 
+  public ToppingDecorator(Tea tea){
+    this.tea = tea;
+  }
   @Override public String getName(){
     return tea.getName() + ", " + name;
   }
 
-  @Override public double getPrice() {
-    return tea.getPrice() + price;
-  }
+  @Override public abstract double getPrice();
 
 }

@@ -6,8 +6,12 @@ package allabouttea;
 public class CoconutJellyDec extends ToppingDecorator implements Tea {
 
   public CoconutJellyDec(Tea tea) {
+    super(tea);
     this.name = "coconut jelly";
-    this.tea = tea;
-    this.price = 1.0;
+  }
+
+  @Override
+  public double getPrice(){
+    return tea.getPrice() + 0.7;
   }
 }

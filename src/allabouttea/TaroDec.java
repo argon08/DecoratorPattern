@@ -6,9 +6,12 @@ package allabouttea;
 public class TaroDec extends ToppingDecorator implements Tea {
 
   public TaroDec(Tea tea) {
+    super(tea);
     this.name = "taro";
-    this.tea = tea;
-    this.price = 1.5;
   }
 
+  @Override
+  public double getPrice(){
+    return tea.getPrice() + 1.5;
+  }
 }
