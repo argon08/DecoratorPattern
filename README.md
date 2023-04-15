@@ -41,6 +41,7 @@ In the package of allabouttea, the “Order” class contains the main method to
 
 ## UML diagram
 
+![UML diagram](/uml.png)
 
 
 ## Reference
